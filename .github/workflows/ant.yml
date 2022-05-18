@@ -25,6 +25,9 @@ jobs:
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
       
+    - name: Creates a JavaDoc
+      run: javadoc -d /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/dist/ -sourcepath /home/runner/work/Laboratorul8I-C
+      
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
       with:
