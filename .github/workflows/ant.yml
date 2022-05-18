@@ -36,6 +36,14 @@ jobs:
         # Destination path
         path: /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/dist/lab8.jar
         
+    - name: Creates a javadoc artifact and uploads it
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        # Artifact name
+        name: javadoc_arti
+        # Destination path
+        path: /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/myjavadoc
+        
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
       with:
