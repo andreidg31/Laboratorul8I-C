@@ -26,7 +26,7 @@ jobs:
       run: ant -noinput -buildfile build.xml
       
     - name: Creates a JavaDoc
-      run: javadoc -d /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/myjavadoc -sourcepath /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/src/*
+      run:  ant -noinput -buildfile build.xml javadoc
       
     - name: Creates a Build Artifact and uploads it
       uses: actions/upload-artifact@v3.0.0
