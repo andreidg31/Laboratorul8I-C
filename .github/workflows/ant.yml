@@ -31,4 +31,4 @@ jobs:
         # Artifact name
         name: myartifact
         # Destination path
-        path: dist/lab8.jar
+        path: /home/runner/work/Laboratorul8I-C/Laboratorul8I-C/dist/lab8.jar
